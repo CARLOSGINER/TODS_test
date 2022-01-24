@@ -1,0 +1,31 @@
+@import '../../../../styles/global.css';
+
+.general{
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    height:35px ;
+    border: 1px solid var(--gray);
+    border-right:none;
+}
+
+.number{
+    width: 50px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button{
+    box-sizing: border-box;
+    border: 1px solid var(--gray);
+    height: calc(35px/2);
+    color: gray;
+    cursor:pointer;
+}

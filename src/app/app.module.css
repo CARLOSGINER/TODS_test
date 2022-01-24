@@ -1,0 +1,15 @@
+@import '../styles/global.css';
+
+.container{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: var(--max-width-px);
+}
+
+@media screen and (max-width:760px){
+    .container{
+        width:100vw;
+    }
+}
+

@@ -1,0 +1,27 @@
+@import '../../styles/global.css';
+
+.general{
+    composes:sectionSetup from '../../styles/global.css';
+    --designHeight-val:69; /*do not put px units*/
+
+    background-color:var(--white);
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general p{
+    font-family: var(--ff-openSans);
+    font-size: clamp(0.55rem, 0.4857rem + 0.2857vw, 0.7rem);
+    color: var(--darkGray);
+    margin: 0;
+}
+
+@media only screen and (max-width:980px) {
+    .general{
+        position: absolute;
+        bottom: -600px;
+    }
+}

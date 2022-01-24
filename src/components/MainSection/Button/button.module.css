@@ -1,0 +1,35 @@
+@import '../../../styles/global.css';
+
+.general{
+    width: 214px;
+    height:55px;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.general:hover{
+    filter:drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    transform:scale(1.01)
+}
+
+.general:active{
+    transform:scale(0.95);
+}
+
+.icon{
+    font-size: 1rem;
+    color:var(--default);
+    margin-right: 3px;
+}
+
+.textStyle{
+    text-transform:uppercase;
+    font-family: var(--ff-openSans);
+    font-size: 0.7rem;
+}
+

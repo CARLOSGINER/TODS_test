@@ -1,0 +1,55 @@
+@import '../../../styles/global.css';
+
+.general{
+    composes:sectionSetup from '../../../styles/global.css';
+    --designHeight-val:70; /*do not put px units*/
+
+    background-color:var(--white);
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    display: flex;
+    justify-content: center;
+}
+
+.general ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0;
+}
+
+.general ul li {
+    list-style: none;
+    margin: 0 1.5em 0 1.5em;
+    border-bottom: 1px solid #fff;
+    transition: all 0.1s ease-in;
+}
+
+.general ul li:hover{
+    border-bottom:2px solid var(--darkGray);
+}
+
+.general ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--default);
+    font-family: var(--ff-openSans);
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:760px){
+    .general{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.deco{
+    width: 0px;
+    height: 29px;
+    border-left: 1px dotted var(--gray);
+    align-self: center;
+    position: absolute;
+    right:12% ;
+}
+

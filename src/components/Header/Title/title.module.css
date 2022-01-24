@@ -1,0 +1,32 @@
+@import '../../../styles/global.css';
+
+.general{
+    composes:sectionSetup from '../../../styles/global.css';
+    --designHeight-val:98; /*do not put px units*/
+
+    background-color:var(--white);
+    display: flex;
+}
+
+.wrapper{
+    margin: auto;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (max-width:760px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+.textStyle{
+    margin:0;
+    color:var(--default);
+    font-family: var(--ff-oswald);
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 1.2857rem + 0.9524vw, 2rem);
+}
+

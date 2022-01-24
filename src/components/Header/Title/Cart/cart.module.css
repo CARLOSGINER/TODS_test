@@ -1,0 +1,44 @@
+@import '../../../../styles/global.css';
+
+
+.buttonStyle{
+    margin:0;
+    padding: 0;
+    height: 42px;
+    width: 126px;
+    background-color:var(--white);
+    border: 2px solid var(--secondary);
+    font-family: var(--ff-openSansCondensed);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position:absolute;
+    right: 0;
+}
+
+@media only screen and (max-height:700px){
+    .buttonStyle{
+        height: 32px;
+        width: calc(3*32px);
+    }
+}
+
+@media only screen and  (max-width:760px){
+    .buttonStyle{
+        /* ratio 3:1 */
+        height: 28px;
+        width: calc(28*3px);
+        margin-right: 1em;
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+.buttonStyle:hover{
+    background-color: var(--secondary);
+    color:var(--white);
+}

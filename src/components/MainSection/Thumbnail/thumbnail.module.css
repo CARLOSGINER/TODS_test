@@ -1,0 +1,22 @@
+@import '../../../styles/global.css';
+
+.general{
+    /* composes:sectionSetup from '../../../styles/global.css';
+    --designHeight-val:168; do not put px units */
+    height:168px;
+    min-height: 120px;
+    width:145px;
+    background-position: center;
+    background-size: cover;
+    filter:opacity(80%);
+}
+
+.general:hover{
+    filter:opacity(100%)
+}
+
+@media only screen and (max-height:750px){
+    .general{
+        height: 20vh;
+    }
+}

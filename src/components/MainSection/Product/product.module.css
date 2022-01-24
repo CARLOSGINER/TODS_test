@@ -1,0 +1,15 @@
+@import '../../../styles/global.css';
+
+.general{
+    composes:sectionSetup from '../../../styles/global.css';
+    --designHeight-val:683; /*do not put px units*/
+
+    width: 100%;
+    background-color: var(--gray);
+    margin:0;
+    margin-top: 2%;
+    background-size: cover;
+    background-position: center;
+    
+}
+

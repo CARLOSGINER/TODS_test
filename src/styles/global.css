@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;500&family=Oswald:wght@700&display=swap');
+
+:root{
+
+    /* colors */
+    --default:hsl(0, 0%, 0%);
+    --primary: hsl(200, 20%, 53%);
+    --secondary:hsl(50, 43%, 76%);
+    --gray:hsl(196, 17%, 87%);
+    --darkGray:hsl(200, 7%, 60%);
+    --white:hsl(0, 0%, 100%);
+
+    /* typography */
+    --ff-openSans: 'Open Sans',sans-serif;
+    --ff-openSansCondensed: 'Open Sans Condensed';
+    --ff-oswald:'Oswald',sans-serif;
+    --ff-lato:'Lato';
+
+    /* Reference sizes in px 
+    (do not put px unit) */
+    --max-totalHeight-val:1292;
+    --max-totalHeight-px:calc(var(--max-height-val)*1px);
+    
+    --min-totalHeight-val:600;
+    --min-totalHeight-px:calc(var(--min-totalHeight-val)*1px);
+
+    --max-width-val:1800;
+    --max-width-px:calc(var(--max-width-val)*1px);
+}
+
+body{
+    width: 100vw;
+    background-color:#fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.sectionSetup{
+     /* the design height value is define inside each css module 
+    for component */
+    --componentAspectRatio:calc(var(--designHeight-val)/var(--max-totalHeight-val));
+
+    width: 100%;
+    height:calc(var(--componentAspectRatio)*100vh);
+    min-height:calc((var(--componentAspectRatio)*var(--min-totalHeight-val))*1px);
+    max-height: calc((var(--componentAspectRatio)*var(--max-totalHeight-val))*1px);
+}
+

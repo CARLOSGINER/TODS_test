@@ -1,0 +1,65 @@
+@import '../../../styles/global.css';
+
+.general{
+    /* composes:sectionSetup from '../../../styles/global.css';
+    --designHeight-val:411; do not put px units */
+    width: 100%;
+    margin-top: 4.87vh;
+}
+
+.commonProperties{
+    margin:0;
+    margin-left: 4%;
+    font-size: 1.2rem;
+
+}
+
+.title{
+    composes: commonProperties;
+    font-family: var(--ff-openSans);
+    color:var(--default)
+}
+
+.price{
+    composes: commonProperties;
+    font-family: var(--ff-lato);
+    color: var(--primary);
+    margin-top: 3%;
+}
+
+.details{
+    composes:commonProperties;
+    font-family: var(--ff-openSans);
+    font-size: 0.6rem;
+    color:var(--primary);
+    margin-top:10%;
+    transform: translateX(-7px);
+}
+
+h3{
+    margin:0.7em;
+}
+
+.details span{
+    color:var(--default);
+    padding:0;
+}
+
+.description{
+    composes:commonProperties;
+    font-size: 0.7rem;
+    font-family: var(--ff-openSans);
+    color: var(--darkGray);
+    margin-top:8%;
+}
+
+.description ul{
+    padding:0;
+    margin-left: 3%;
+}
+
+@media only screen  and (max-width:980px){
+    .general{
+        max-height: none;
+    }
+}

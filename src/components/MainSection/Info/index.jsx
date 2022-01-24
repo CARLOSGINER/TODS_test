@@ -10,10 +10,10 @@ const Info = () => {
 
     return(
         <aside className={general}>
-            <h1 className={title}>{data.name}</h1>
+            <h1 className={title}>{data?data.name:"loading..."}</h1>
             <h2 className={price}>$499.00</h2>
             <div className={details}>
-                <h3><span>Availability: </span>{data.stock.stockLevelStatus}</h3>
+                <h3><span>Availability: </span>{data?data.stock.stockLevelStatus:"loading..."}</h3>
                 <h3><span>Product Code: </span>#4657</h3>
                 <h3><span>Tags: </span>Fashion,Hood,Classic</h3>
             </div>

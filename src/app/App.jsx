@@ -14,9 +14,8 @@ function App() {
 
   useEffect(()=>{
     dispatch(getData())
-  },[dispatch])
-  
-// dispatch(getData())
+  },[])
+
 
   return (
     <main className={container}>

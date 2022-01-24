@@ -7,9 +7,9 @@ export function* handleGetData(action) {
         const response = yield call(requestGetData);
         const {data} = response;
         yield put(setData(data))
-        console.log('FROM handleGetData');
+        console.log('ok from  handleGetData...');
 
     } catch(error){
-        console.log('FROM handleGetData',error);
+        console.log(error);
     }
 }

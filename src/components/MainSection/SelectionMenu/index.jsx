@@ -30,9 +30,9 @@ const SelectionMenu = () => {
                 <label htmlFor="color">COLOR</label>
                 <select  defaultValue="default" id="color" name="color" onChange={handleChange}>
                     <option value="default">-</option>
-                    {data.colorSizeOptions.map((each,index)=>(
+                    {data? data.colorSizeOptions.map((each,index)=>(
                         <option key={index} value={each.color}>{each.color}</option>
-                    ))}
+                    )):"loading..."}
                 </select>
             </div>
             <div className={menu}>

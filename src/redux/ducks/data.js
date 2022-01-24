@@ -14,6 +14,7 @@ export const setData = (data) =>({
 export default (state={data:undefined},action) => {
     switch(action.type){
         case SET_DATA: {
+            console.log('ok from SET_DATA action case...')
             const {data} = action;
             return {data}
         }

@@ -15,7 +15,7 @@ const Thumbnail = ({url,setMainURL}) => {
             onClick={handleClick}
             className={general}
             style={{
-                backgroundImage:`linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) ,url(${url})`,
+                backgroundImage:`linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) ,url(${process.env.PUBLIC_URL +url})`,
             }}>
         </div>
     )

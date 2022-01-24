@@ -8,7 +8,7 @@ const Product = ({mainURL}) => {
         <figure 
             className={general}
             style={{
-                backgroundImage:` linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url(${mainURL})`
+                backgroundImage:` linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url(${process.env.PUBLIC_URL +mainURL})`
             }}
         ></figure>
     )

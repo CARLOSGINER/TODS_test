@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TODS_test/static/css/main.54ea74b8.css",
+    "main.js": "/TODS_test/static/js/main.e254d33b.js",
+    "index.html": "/TODS_test/index.html",
+    "main.54ea74b8.css.map": "/TODS_test/static/css/main.54ea74b8.css.map",
+    "main.e254d33b.js.map": "/TODS_test/static/js/main.e254d33b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54ea74b8.css",
+    "static/js/main.e254d33b.js"
+  ]
+}
